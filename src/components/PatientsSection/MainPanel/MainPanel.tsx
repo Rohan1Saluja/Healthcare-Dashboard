@@ -33,12 +33,14 @@ export const MainPanel: React.FC<Props> = ({ patients, inFocusList }) => {
   //----------------------------
 
   const fetchOtherDiagnosisFeatures = (diagnosisData: any) => {
-    const respiratoryData = diagnosisData?.at(-1).respiratory_rate;
-    setRespiratoryRate(respiratoryData);
-    const temperatureData = diagnosisData?.at(-1).temperature;
-    setTemperature(temperatureData);
-    const heartData = diagnosisData?.at(-1).heart_rate;
-    setHeartRate(heartData);
+    if (!!diagnosisData && diagnosisData.length > 0) {
+      const respiratoryData = diagnosisData?.at(-1).respiratory_rate;
+      setRespiratoryRate(respiratoryData);
+      const temperatureData = diagnosisData?.at(-1).temperature;
+      setTemperature(temperatureData);
+      const heartData = diagnosisData?.at(-1).heart_rate;
+      setHeartRate(heartData);
+    }
   };
 
   //---------------------------

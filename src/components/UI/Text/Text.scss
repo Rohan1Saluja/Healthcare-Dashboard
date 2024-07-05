@@ -1,0 +1,112 @@
+@import "../../../../styles/colors";
+@import "../../../../styles/typography";
+
+.text {
+  color: $text-color;
+  line-height: 1.5rem;
+  padding: 0.2rem 0;
+}
+
+.secondary {
+  color: $secondary-color;
+}
+
+.tertiary {
+  color: $tertiary-color;
+}
+
+.quaternary {
+  color: $quaternary-color;
+}
+
+.accent {
+  color: $accent-color;
+}
+
+.white {
+  color: $light-color;
+}
+
+.italics {
+  font-style: italic;
+}
+.light-text {
+  font-family: RalewayLight;
+  color: $text-opacity77;
+}
+
+.site-heading {
+  font-size: 3.5rem;
+  font-family: RalewayBold;
+  line-height: 3rem;
+}
+
+.heading {
+  font-size: 2.5rem;
+  font-family: RalewayBold;
+  line-height: 2.5rem;
+}
+
+.sub-heading {
+  font-size: 1.6rem;
+  font-family: RalewayBold;
+}
+
+.description-extra-small {
+  font-size: 0.6rem;
+  line-height: 0.5rem;
+  padding: 0.1rem;
+}
+
+.description-small {
+  font-size: 0.8rem;
+  line-height: 0.8rem;
+}
+
+.description-mid {
+  font-size: 1rem;
+}
+
+.description {
+  font-size: 1.2rem;
+  font-family: RalewayMedium;
+}
+
+.semi-bold {
+  font-family: RalewaySemiBold;
+}
+
+.bold {
+  font-family: RalewayBold;
+}
+
+.text.underlined {
+  text-decoration-line: underline;
+  color: $accent-color;
+}
+
+.shorter-line-height {
+  line-height: 1rem;
+  // margin: 0.5rem 0;
+  padding: 0;
+}
+
+@media (max-width: 576px) {
+  .text {
+    color: $text-color;
+    line-height: 1.5rem;
+  }
+  .mobile-heading {
+    font-size: 1.25rem;
+  }
+
+  .mobile-desc {
+    font-size: 0.75rem;
+    line-height: 1.125rem;
+  }
+
+  .shorter-line-height {
+    line-height: 1rem;
+    margin: 0.3rem 0;
+  }
+}

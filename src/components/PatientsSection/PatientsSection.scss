@@ -1,0 +1,23 @@
+@import "../../../styles/global";
+@import "../../../styles/colors";
+
+.patients-section {
+  height: 100%;
+  .header {
+    height: $header-height;
+  }
+  .main-container {
+    display: grid;
+    grid-template-columns: 0.9fr 2.2fr 0.9fr;
+    gap: 1rem;
+    margin: 1rem;
+    max-height: 40%;
+    .grid-section {
+      border-radius: 1rem;
+      max-height: 40%;
+    }
+    .right-panel {
+      background-color: $secondary-color;
+    }
+  }
+}

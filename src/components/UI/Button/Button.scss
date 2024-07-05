@@ -1,0 +1,21 @@
+.default {
+  text-transform: none !important;
+  font-size: medium !important;
+  border-radius: 2rem !important;
+}
+
+.default.small {
+  width: 100px;
+}
+
+.default.medium {
+  width: 150px;
+}
+
+.default.footer-button {
+  margin-right: 20px;
+}
+
+.default.small-text {
+  font-size: x-small !important;
+}

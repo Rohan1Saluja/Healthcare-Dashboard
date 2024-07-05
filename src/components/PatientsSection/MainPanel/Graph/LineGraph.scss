@@ -1,0 +1,71 @@
+@import "../../../../../styles/colors";
+
+.line-graph {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 5%;
+  padding: 0.5rem;
+  transform: scale(0.9);
+  .graph-section {
+    width: 80%;
+    .header {
+      display: flex;
+      justify-content: space-between;
+      padding: 0.5rem 1rem 0 1rem;
+      .chart-time {
+        display: flex;
+        align-items: center;
+      }
+    }
+  }
+  .info-section {
+    width: 30%;
+    height: 100%;
+    .systolic {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      padding: 0.5rem 0;
+      .heading {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        .bulletin {
+          height: 0.5rem;
+          width: 0.5rem;
+          background-color: #e66fd2;
+          border-radius: 100%;
+        }
+      }
+      .levels {
+        display: flex;
+      }
+    }
+    .diastolic {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      padding: 0.5rem 0;
+
+      .heading {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        .bulletin {
+          height: 0.5rem;
+          width: 0.5rem;
+          background-color: #8c6fe6;
+          border-radius: 100%;
+        }
+      }
+      .levels {
+        display: flex;
+      }
+    }
+    .break {
+      border: 0.01rem solid $gray-color;
+    }
+  }
+}

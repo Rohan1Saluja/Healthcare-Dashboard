@@ -1,0 +1,36 @@
+@import "../../../../../styles/colors";
+
+.diagnostic-list-container {
+  max-height: 100%;
+  .table-container {
+    box-shadow: none;
+    text-align: center;
+    max-height: 80%;
+    overflow: scroll;
+    padding: 0.5rem 0;
+    .MuiTable-root {
+      border-collapse: separate;
+      border-spacing: 0;
+    }
+    .table-head {
+      background-color: $secondary-color;
+      border-radius: 2rem;
+      .MuiTableCell-root {
+        border-bottom: 0.06rem solid $secondary-color;
+      }
+      .MuiTableRow-root:first-child .MuiTableCell-root:first-child {
+        border-top-left-radius: 2rem;
+        border-bottom-left-radius: 2rem;
+      }
+      .MuiTableRow-root:first-child .MuiTableCell-root:last-child {
+        border-top-right-radius: 2rem;
+        border-bottom-right-radius: 2rem;
+      }
+    }
+    .table-body {
+      .MuiTableCell-root {
+        border-bottom: 0.06rem solid $secondary-color;
+      }
+    }
+  }
+}

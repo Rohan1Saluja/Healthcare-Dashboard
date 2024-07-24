@@ -24,12 +24,12 @@
       gap: 0.5rem;
       padding: 1rem 0;
       max-height: 5rem;
-      .link {
+    }
+     .link {
         &:hover {
           cursor: pointer;
           text-decoration: underline;
         }
       }
-    }
   }
 }
